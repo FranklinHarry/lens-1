@@ -62,7 +62,7 @@ export class KubeObjectDetails extends React.Component {
         .getStore(this.path)
         ?.getByPath(this.path);
     } catch (error) {
-      console.error(`[KUBE-OBJECT-DETAILS]: failed to get store or object: ${error}`, { path: this.path });
+      logger.error(`[KUBE-OBJECT-DETAILS]: failed to get store or object: ${error}`, { path: this.path });
 
       return undefined;
     }

@@ -208,6 +208,7 @@ module.exports = {
       rules: {
         "no-irregular-whitespace": "error",
         "header/header": [2, "./license-header"],
+        "react/prop-types": "off",
         "no-console": "error",
         "no-invalid-this": "off",
         "@typescript-eslint/no-invalid-this": ["error"],
